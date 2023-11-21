@@ -6,8 +6,8 @@
 --nivo studija, mesto rodjenja tih studenata (u slučaju studenata rođenih u Valjevu prikazati NULL vrednost) i datum 
 --diplomiranja tih studenata ili najkasniji mogući datum diplomiranja (koji dobijamo kada na datum upisa studenta dodamo 
 --dvostruku dužinu trajanja odgovarajućih studija) ukoliko student nije diplomirao. Rezultat upita urediti opadajuće po indeksu. 
---Resenje:
 
+--Resenje:
 SELECT d.ime || ‘_’ || d.prezime || ‘_’ || CHAR((indeks/10000-19)%100), ‘M1’, NULLIF(mestoRodjenja, ‘Valjevo’), COALESCE(datDiplomiranja, datUpisa + 8 YEARS)
 FROM da.dosije d JOIN da.studijskiProgram sp ON d.idPrograma=sp.id JOIN da.nivoKvalifikacije nk ON sp.idNivoa=nk.id
 WHERE nk.naziv='Osnovne akademske studije' AND sp.naziv='Matematika' 
@@ -27,8 +27,8 @@ ORDER BY indeks DESC;
 --nazive predmeta odnosno ispitnog roka, kao i dobijenu ocenu.
 
 --Upit urediti po punom potpisu opadajuce, zatim po oceni rastuce.
---Resenje:
 
+--Resenje:
 SELECT d.indeks, d.ime || ' ' || d.prezime AS "Potpis", ss.naziv, p.naziv, ir.naziv, i.ocena
 FROM da.dosije d JOIN da.studijskiProgram sp ON d.idPrograma=sp.id
 			     JOIN da.nivoKvalifikacije nk ON sp.idNivoa=nk.id
