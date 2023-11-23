@@ -17,4 +17,4 @@ U nastavku je navedeno sve što je do sada urađeno na časovima vežbi:
 - Nedelja 12: formalni upitni jezici (relacioni račun);
 
 
-U folderu ZADACI_SA_ROKOVA će se nalaziti zadaci sa prektičnog dela ispita iz prethodne školske godine!
+U folderu ZADACI_SA_ROKOVA će se nalaziti zadaci sa praktičnog dela ispita iz prethodne školske godine!
