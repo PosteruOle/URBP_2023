@@ -11,5 +11,10 @@ U nastavku je navedeno sve što je do sada urađeno na časovima vežbi:
 - Nedelja 6: složeni upiti (naredba WITH) i vežbanje SQL-a;
 - Nedelja 7: naredbe za menjanje sadržaja baze podataka (INSERT, UPDATE, DELETE);
 - Nedelja 8: kreiranje tabele, promena njene strukture i vežbanje SQL-a;
+- Nedelja 9: kreiranje indeksa i rad sa njima, kreiranje pogleda i rad sa njima, vežbanje SQL-a;
+- Nedelja 10: MERGE naredba, vežbanje SQL-a;
+- Nedelja 11: formalni upitni jezici (relaciona algebra);
+- Nedelja 12: formalni upitni jezici (relacioni račun);
 
 
+U folderu ZADACI_SA_ROKOVA će se nalaziti zadaci sa prektičnog dela ispita iz prethodne školske godine!
