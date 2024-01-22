@@ -35,3 +35,15 @@ U nastavku možete pronaći snimke vežbi iz školske 2021/2022. godine preuzete
 | 10 | [MERGE naredba, vežbanje SQL-a](https://matf.webex.com/matf/ldr.php?RCID=1a0db3fb3f9c52214c57926e0b18aeb2)| 4Ynks8UB |
 | 11 | [Formalni upitni jezici (relaciona algebra)](https://matf.webex.com/matf/ldr.php?RCID=d563b2ac4488dafc39f22619ccb4c231)| GmPndiC9 |
 | 12 | [Formalni upitni jezici (relacioni račun)](https://matf.webex.com/recordingservice/sites/matf/recording/playback/cf649c904b8f103abead00505681fd6c)| xUe29mvx |
+
+## Obaveze studenata
+### Nastava:
+Nastava se sastoji iz dva časa predavanja i dva časa vezbi nedeljno.
+Predmet nosi 5 ESPB.
+
+### Predispitne obaveze:
+Predispitne obaveze na kursu su ukinute.
+
+### Ispit:
+- Pismeni ispit (80 poena)
+- Usmeni ispit (20 poena) 
