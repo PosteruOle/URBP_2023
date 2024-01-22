@@ -51,3 +51,9 @@ Predispitne obaveze na kursu su ukinute.
 **Pismeni ispit** se sastoji od **praktičnog dela ispita** (zadaci od 1. do 4.) koji nosi 50 poena, kao i **teorijskog dela ispita** (zadaci od 5. do 10.) koji nosi 30 poena.
 
 Uslov za izlazak na usmeni deo ispita je barem 41 poen ukupno ostvaren na ispitu, kao i barem 26 poena na praktičnom delu pismenog ispita.  
+## O kursu
+### Predmetni nastavik:
+- dr Saša Malkov (link do veb stranice profesora možete pronaći [ovde](http://poincare.matf.bg.ac.rs/~smalkov/index.php))
+### Asistenti:
+- Milan Čugurović (link do veb stranice možete pronaći [ovde](http://poincare.matf.bg.ac.rs/~milan.cugurovic/index.html))
+- Petar Tešić (link do veb stranice možete pronaći [ovde](http://www.matf.bg.ac.rs/p/petar-tesic/pocetna/))
