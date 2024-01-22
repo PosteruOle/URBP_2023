@@ -29,7 +29,7 @@ U nastavku možete pronaći snimke vežbi iz školske 2021/2022. godine preuzete
 | 4 | [Skupovne operacije (UNION, INTERSECT, EXCEPT) i rad sa skalarnim funkcijama](https://matf.webex.com/matf/ldr.php?RCID=b4e29b701c178f5e9d292334ae2a022d) | qWfUjsc9 |
 | 5 | [Kolonske funkcije (COUNT, MIN, MAX, AVG i druge), GROUP BY i HAVING klauze](https://matf.webex.com/matf/ldr.php?RCID=2e70d11de355ab6ed0bd99d6fd4ff40b) | yGmsf4Zh |
 | 6 | [Složeni upiti (naredba WITH) i vežbanje SQL-a](https://matf.webex.com/matf/ldr.php?RCID=09892bae237aca512384badde6250c4f) | aZge8w3Q |
-| 7 | [Upoznavanje sa TCP soketima](https://matf.webex.com/matf/ldr.php?RCID=cd8aa4dfd25d31057b057e713264ce0d)| Qx5wpjmB |
+| 7 | [Naredbe za menjanje sadržaja baze podataka (INSERT, UPDATE, DELETE)](https://matf.webex.com/matf/ldr.php?RCID=cd8aa4dfd25d31057b057e713264ce0d)| Qx5wpjmB |
 | 8 | [Kreiranje tabela, promena njihovih struktura i vežbanje SQL-a](https://matf.webex.com/matf/ldr.php?RCID=2986b1661a474d8b74a7f14c374cc2d2) | GrdntKk3 |
 | 9 | [Kreiranje indeksa i pogleda, vežbanje SQL-a](https://matf.webex.com/matf/ldr.php?RCID=d833941d96dc96eb79083e4269a75029)| PcpMFJJ7 |
 | 10 | [MERGE naredba, vežbanje SQL-a](https://matf.webex.com/matf/ldr.php?RCID=1a0db3fb3f9c52214c57926e0b18aeb2)| 4Ynks8UB |
