@@ -47,6 +47,7 @@ Predispitne obaveze na kursu su ukinute.
 ### Ispit:
 - Pismeni ispit (80 poena)
 - Usmeni ispit (20 poena)
+
 **Pismeni ispit** se sastoji od **praktičnog dela ispita** (zadaci od 1. do 4.) koji nosi 50 poena, kao i **teorijskog dela ispita** (zadaci od 5. do 10.) koji nosi 30 poena.
 
 Uslov za izlazak na usmeni deo ispita je barem 41 poen ukupno ostvaren na ispitu, kao i barem 26 poena na praktičnom delu pismenog ispita.  
