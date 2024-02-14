@@ -106,4 +106,57 @@ JOIN
  JOIN 
 (predmet WHERE espb>=5)[idPredmeta])[skGodina, oznakaRoka]
 
+-- Januar 2 2023/2024
+--3. Košarkaški klub Partizan planira da oformi svoju studentsku košarkašku selekciju. 
+--U KK Partizan Student nastupaće studenti sa Beogradskog univerziteta. Potrebno je podržati integraciju 
+--baze podataka Matematičkog fakulteta u bazu igrača KK Partizan Student. 
+
+-- a) Napisati SQL naredbu kojom se pravi tabela kosarkasi koja sadrzi informacije o potecijalnim kosarkasima i kosarkasicama Matematickog fakulteta.
+--    Tabela ima sledece kolone:
+--		*  indeks: indeks studenta
+-- 		*  godina_upisa: kalendarska godina upisa studenta
+--  	*  visina: visina studenta
+
+CREATE TABLE kosarkasi(
+    indeks INT,
+	godina_upisa SMALLINT,
+	visina FLOAT
+);
+	
+-- b) Napisati (jednu) SQL naredbu kojom se:
+--		*  definise strani kljuc u tabeli kosarkasi na tabelu dosije. 
+--         Obezbediti da se pri brisanju studenta iz tabele kosarkasi brisu i podaci u tabeli dosije.
+--      * postaviti podrazumevanu vrednost kolone visina na 180.
+--      * postaviti ogranicenje da visina mora biti izmedju 160 i 220.
+
+ALTER TABLE kosarkasi
+	ADD FOREIGN KEY fk_dosije (indeks) REFERENCES dosije ON DELETE CASCADE
+	ADD CONSTRAINT visina_ogranicenje CHECK (visina BETWEEN 160 AND 220)
+	ALTER COLUMN visina SET DEFAULT 180;
+	
+-- c) Napisati SQL naredbu kojom se unose informacije o studentima u tabelu kosarkasi. 
+--    Podaci se unose samo za studente muskog pola koji nisu diplomirali, a tokom studiranja su uvek bili na budzetu.
+--    Visina studenta racuna se po formuli 160+broj_poloezenih_ispita
+
+INSERT INTO kosarkasi
+SELECT d.indeks, YEAR(datum_upisa), 160+COUNT(*)
+FROM dosije d JOIN ispit i on d.indeks=i.indeks and ocena>5 and status_prijave='o'
+WHERE d.pol='m' AND NOT EXISTS (SELECT *
+				  				FROM status s 
+				  				WHERE s.indeks=d.indeks and s.status<>'budzet')
+GROUP BY d.indeks, datum_upisa;
+
+-- d) Brisu oni studenti iz tabele koji su polozili vise ESPB poena nego sto je njihova visina.
+
+DELETE FROM kosarkasi 
+WHERE visina<(SELECT SUM(p.bodovi)
+			  FROM dosije d JOIN ispit i ON d.indeks=i.indeks
+				  			JOIN predmet p ON i.id_predmeta=p.id_predmeta
+			  WHERE d.indeks=kosarkasi.indeks AND d.pol='m' AND i.ocena>5 AND i.status_prijave='o');
+	
+-- e) Brise tabela kosarkasi
+
+DROP TABLE kosarkasi;
+
+
 
